@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jacky's Restaurant | Enquiry</title>
+<meta name="description" content="Enquire about private functions, catering and group bookings at Jacky's Restaurant in Tzaneen, Limpopo. Get an instant cost estimate.">
+<meta name="keywords" content="Jacky's Restaurant enquiry, Tzaneen catering, private function Tzaneen, group booking Limpopo, function venue Tzaneen">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="site-header">
+<h1>Jacky's Restaurant</h1>
+</header>
+
+<nav id="main-nav">
+<a href="index.html">Home</a>
+<a href="about Us.html">About Us</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="reviews.html">Reviews</a>
+<a href="reservations.html">Reservations</a>
+<a href="enquiry.html" class="active">Enquiry</a>
+<a href="contact us.html">Contact Us</a>
+</nav>
+
+<main id="enquiry-content">
+<h2>Make an Enquiry</h2>
+<p>Planning a function, catering or a big group visit? Tell us what you need and we will show you an estimate straight away.</p>
+
+<form id="enquiry-form" class="site-form" action="enquiry.html" method="post" novalidate>
+
+<label for="enq-name">Full Name</label>
+<input type="text" id="enq-name" name="name" minlength="2" maxlength="50" required>
+<span class="error" id="err-name"></span>
+
+<label for="enq-email">Email Address</label>
+<input type="email" id="enq-email" name="email" required>
+<span class="error" id="err-email"></span>
+
+<label for="enq-phone">Phone Number</label>
+<input type="tel" id="enq-phone" name="phone" placeholder="e.g. 0821234567" pattern="0[0-9]{9}" required>
+<span class="error" id="err-phone"></span>
+
+<label for="enq-type">What are you enquiring about?</label>
+<select id="enq-type" name="type" required>
+<option value="">Please choose...</option>
+<option value="Private function">Private function</option>
+<option value="Catering">Catering</option>
+<option value="Birthday or celebration">Birthday or celebration</option>
+<option value="Large group booking">Large group booking</option>
+</select>
+<span class="error" id="err-type"></span>
+
+<label for="enq-guests">Number of Guests</label>
+<input type="number" id="enq-guests" name="guests" min="1" max="200" required>
+<span class="error" id="err-guests"></span>
+
+<label for="enq-date">Preferred Date</label>
+<input type="date" id="enq-date" name="date" required>
+<span class="error" id="err-date"></span>
+
+<label>Extras (optional)</label>
+<div class="check-group">
+<label class="inline"><input type="checkbox" name="extras" value="Decorations"> Decorations (R500)</label>
+<label class="inline"><input type="checkbox" name="extras" value="Celebration cake"> Celebration cake (R350)</label>
+<label class="inline"><input type="checkbox" name="extras" value="Music or DJ"> Music or DJ (R1200)</label>
+<label class="inline"><input type="checkbox" name="extras" value="Special dietary meals"> Special dietary meals (R200)</label>
+</div>
+
+<label for="enq-message">Message</label>
+<textarea id="enq-message" name="message" rows="4" minlength="10" maxlength="300" required></textarea>
+<span class="error" id="err-message"></span>
+
+<button type="submit">Send Enquiry</button>
+</form>
+
+<div id="enquiry-response" class="response-box">
+<h3 id="resp-title"></h3>
+<p id="resp-cost"></p>
+<p id="resp-extras"></p>
+<p id="resp-avail"></p>
+<p>We will confirm everything by email within 24 hours.</p>
+</div>
+</main>
+
+<footer id="site-footer">
+<h3>Jacky's Restaurant</h3>
+<p>Aqua Park, Tzaneen, Limpopo, South Africa</p>
+<p>5 Douglas Street</p>
+<p>Thank you for choosing Jacky's Restaurant!</p>
+<p>&copy; 2026 Jacky's Restaurant. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
